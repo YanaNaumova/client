@@ -1,0 +1,278 @@
+.modalContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.postContainer {
+  width: 100%;
+  max-width: 1001px;
+  height: 722px;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.leftContainer {
+  width: 100%;
+  max-width: 577px;
+  height: 100%;
+  max-height: 722px;
+}
+
+.postImgContainer {
+  width: 100%;
+  max-width: 577px;
+  max-height: 722px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  max-width: 577px;
+  max-height: 722px;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 423px;
+  height: 100%;
+  max-height: 722px;
+  background-color: #f5f5f5;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 52px;
+  padding: 12px;
+  align-items: center;
+  border-bottom: 2px solid #efefef;
+}
+
+.userInfo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.userPhoto {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+}
+
+.username {
+  color: #262626;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.optionBtn {
+  color: #000000;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.descriptionContainer {
+  display: flex;
+  padding: 14px;
+  gap: 5px;
+}
+
+.description {
+  display: inline-block;
+}
+
+.descriptionInfo {
+  font-weight: 400;
+  line-height: 15px;
+  color: #000000;
+  font-size: 12px;
+  padding-left: 5px;
+  text-align: start;
+}
+
+.dayInfo,
+.dayInfoLike,
+.commentLikesCount {
+  color: #737373;
+  font-weight: 400;
+  font-size: 10.17px;
+  line-height: 13.6px;
+}
+
+.dayInfoLike {
+  padding-left: 45px;
+}
+
+.descriptionInfoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentsContainer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.commentInfo {
+  display: flex;
+  padding-left: 45px;
+  gap: 5px;
+  align-items: center;
+}
+
+.like,
+.comment {
+  width: 20.34px;
+  height: 20.34px;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: transform 0.2s, filter 0.2s;
+}
+.smallLike {
+  width: 10.17px;
+  height: 10.17px;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.like:hover,
+.smallLike:hover {
+  transform: scale(1.1);
+}
+
+.smallLike.smallLiked {
+  filter: invert(31%) sepia(81%) saturate(6438%) hue-rotate(349deg)
+    brightness(96%) contrast(108%);
+}
+.like.liked {
+  filter: invert(31%) sepia(81%) saturate(6438%) hue-rotate(349deg)
+    brightness(96%) contrast(108%);
+}
+
+.liksAndMessageIcons {
+  display: flex;
+  gap: 14px;
+  padding-bottom: 14px;
+}
+.likesCountContainer {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #efefef;
+  padding: 14px;
+}
+
+.sendBtn {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  color: #0095f6;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+.addComment {
+  max-height: 45px;
+  padding: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.commentInput {
+  flex: 1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+}
+
+.commentHeader {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.commentItem {
+  display: flex;
+  padding-left: 14px;
+  padding-right: 14px;
+  gap: 5px;
+  align-items: center;
+  width: 100%;
+}
+
+.commentItemContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.commentsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.commentText {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.commentTextContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.comments {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.likeAndTimeContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.postCount {
+  color: #000000;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.gradient {
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px rgba(255, 105, 180, 0.9),
+    0 0 6px 1px rgba(255, 140, 0, 0.7), 0 0 10px -1px rgba(255, 105, 180, 0.6);
+  transition: all 0.3s ease;
+}
+.gradient:hover {
+  border-color: #f477e4;
+  box-shadow: 0 0 8px #f4b1db;
+}
